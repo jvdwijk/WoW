@@ -79,3 +79,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+WoW/Library/metadata/00/00000000000000001000000000000000
+*.info
+WoW/Temp/UnityTempFile-6a2f4abe18766bc4c90f27c1b35a3e6f
+*.bakert
