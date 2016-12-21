@@ -13,7 +13,7 @@ public class ChooseAndSetActive : MonoBehaviour
     {
 		for (int i = 0; i < mainAsset.Length; i++)
         {
-			mainAsset[i] = mainAsset[i].GetComponent<GameObject>();
+			//mainAsset[i] = mainAsset[i].GetComponent<GameObject>();
 			if(mainAsset[i] != mainAsset[0]) 
             {
 				mainAsset[i].SetActive (false);
@@ -25,11 +25,11 @@ public class ChooseAndSetActive : MonoBehaviour
         }
     }
 
-    public void ScreenUpdate(Canvas menu)
+	public void HairUpdate(GameObject hair)
     {
 		for (int i = 0; i < mainAsset.Length; i++)
         {
-			if (mainAsset[i].name == menu.name)
+			if (mainAsset[i].name == hair.name)
             {
 				mainAsset[i].SetActive (true);
             }
