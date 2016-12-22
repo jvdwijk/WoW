@@ -25,11 +25,11 @@ public class ChooseAndSetActive : MonoBehaviour
         }
     }
 
-	public void HairUpdate(GameObject hair)
+	public void HairUpdate(GameObject active)
     {
 		for (int i = 0; i < mainAsset.Length; i++)
         {
-			if (mainAsset[i].name == hair.name)
+			if (mainAsset[i].name == active.name)
             {
 				mainAsset[i].SetActive (true);
             }
