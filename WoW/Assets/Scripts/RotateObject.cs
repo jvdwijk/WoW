@@ -6,12 +6,11 @@ public class RotateObject : MonoBehaviour
     private float horizontalSpeed = 2.0F;
     public GameObject leftButton;
     public GameObject rightbutton;
-    
+    public float turnSpeed = 200f;
     public void Rotate()
     {
         transform.Rotate(Vector3.up, horizontalSpeed * Time.deltaTime);
-
-
+        
     }
     void Update()
     {
@@ -21,5 +20,14 @@ public class RotateObject : MonoBehaviour
             transform.Rotate(0, -h, 0);
         }
 
-     }
+    }
+    public void RotateRight()
+    {
+
+    }
+    public void RotateLeft()
+    {
+        transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+    }
+    
 }
