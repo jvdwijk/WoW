@@ -4,7 +4,6 @@ using System.Collections;
 public class RotateObject : MonoBehaviour
 {
     private float horizontalSpeed = 2.0F;
-   
     public float turnSpeed = 200f;
     
    
