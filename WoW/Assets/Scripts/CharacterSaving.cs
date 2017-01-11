@@ -7,11 +7,11 @@ public class CharacterSaving : MonoBehaviour {
 	void Start () {
 		if (!PlayerPrefs.HasKey ("HairType")) 
 		{
-			PlayerPrefs.SetInt ("HairType",0);
+			PlayerPrefs.SetInt ("HairType",1);
 		}
 		if(!PlayerPrefs.HasKey ("HairColor"))
 		{
-			PlayerPrefs.SetInt ("HairColor",0);
+			PlayerPrefs.SetInt ("HairColor",1);
 		}
 	}
 

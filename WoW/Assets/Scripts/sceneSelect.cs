@@ -13,6 +13,5 @@ public class SceneSelect: MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("heor");
     }
 }
