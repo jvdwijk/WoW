@@ -4,28 +4,15 @@ using UnityEngine.SceneManagement;
 
 
 
-public class sceneSelect: MonoBehaviour
+public class SceneSelect: MonoBehaviour
 {
-    public void SceneSelect(int scene)
+    public void SelectScene(int scene)
     {
-
         SceneManager.LoadScene(scene);
-
     }
     public void QuitGame()
     {
         Application.Quit();
         Debug.Log("heor");
-    }
-
-    void Start()
-    {
-
-    }
-
-
-    void Update()
-    {
-
     }
 }
