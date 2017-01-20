@@ -10,10 +10,10 @@ public class SaveToFile : MonoBehaviour {
 	public void WriteToFile()
 	{
 		var bf = new BinaryFormatter();
-		FileStream file = File.Open (Application.persistentDataPath + "/SaveFile.dat", FileMode.OpenOrCreate);
+		FileStream file = File.Open (Application.persistentDataPath + "/SaveFile.txt", FileMode.OpenOrCreate);
 
 		var data = new NewPlayer ();
-		data.playerName = PlayerPrefs.GetString ("Name");
+		data.playerName = "<name> " + PlayerPrefs.GetString ("Name") + " </name>";
 		data.hairType = PlayerPrefs.GetInt ("HairType");
 		data.hairColor = PlayerPrefs.GetInt ("HairType");
 
