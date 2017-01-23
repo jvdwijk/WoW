@@ -10,12 +10,21 @@ public class SaveToFile : MonoBehaviour {
 	public void WriteToFile()
 	{
 		var bf = new BinaryFormatter();
-		FileStream file = File.Open (Application.persistentDataPath + "/SaveFile.txt", FileMode.OpenOrCreate);
+        FileStream file;
+        if (File.Exists(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt"))
+        {
+            file = File.Open(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt", FileMode.Append);
+        }
+        else
+        {
+            file = File.Open(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt", FileMode.Create);
+        }
+		
 
 		var data = new NewPlayer ();
-		data.playerName = "<name> " + PlayerPrefs.GetString ("Name") + " </name>";
-		data.hairType = PlayerPrefs.GetInt ("HairType");
-		data.hairColor = PlayerPrefs.GetInt ("HairType");
+		data.playerName = PlayerPrefs.GetString ("Name");
+		data.hairType = PlayerPrefs.GetInt("HairType").ToString();
+		data.hairColor = PlayerPrefs.GetInt("HairType").ToString();
 
 		bf.Serialize (file, data);
 		file.Close ();
@@ -26,6 +35,6 @@ public class SaveToFile : MonoBehaviour {
 class NewPlayer
 {
 	public string playerName;
-	public int hairType;
-	public int hairColor;
+	public string hairType;
+	public string hairColor;
 }
