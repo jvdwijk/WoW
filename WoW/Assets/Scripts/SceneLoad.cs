@@ -2,16 +2,10 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-
-
-public class SceneSelect: MonoBehaviour
+public class SceneLoad: MonoBehaviour
 {
     public void SelectScene(int scene)
     {
         SceneManager.LoadScene(scene);
-    }
-    public void QuitGame()
-    {
-        Application.Quit();
     }
 }
