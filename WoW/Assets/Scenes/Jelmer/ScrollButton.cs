@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class ScrollButton : MonoBehaviour
 {
-
-    float buttonPosition;
+    private float ButtonCurrentPosition;
+    public Rigidbody rb;
+    private Vector3 MoveButtons;
 
     void Start() {
-        buttonPosition = GameObject.Find("Content").transform.position.y;
-        Debug.Log(buttonPosition);
-                }
+        rb = GetComponent <Rigidbody>();
+        ButtonCurrentPosition = rb.transform.position.y;
+        MoveButtons = new Vector3(0, 54, 0);
+    }
     void Update()
     {
-        buttonPosition = GameObject.Find("Content").transform.position.y;
+        ButtonCurrentPosition = rb.transform.position.y;
     }
 
     public void UpButton()
     {
-        buttonPosition += 10;
-        Debug.Log(buttonPosition);
+        rb.transform.position += MoveButtons; 
+        Debug.Log(ButtonCurrentPosition);
+    }
+
+    public void DownButton()
+    {
+        rb.transform.position -= MoveButtons;
+        Debug.Log(ButtonCurrentPosition);
     }
 
 }
