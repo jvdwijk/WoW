@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: b9dbf725053d3484bafda52f484b0a8c
+timeCreated: 1484209450
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: horn
+    100004: horn1_group1
+    100006: horn1_group2
+    100008: horn1_group3
+    100010: instances_base_group1_chain_part_chain1_chain2_chain3_chain_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part_chain_part1_chain_part2
+    100012: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_bottom_bottom_bottom_bottom_bottom_bottom_bottom
+    100014: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_mid_mid_mid_mid_mid_mid_mid
+    100016: instances_base_group_base_group1_top1_base_base1_transform3_base2_transform4_base_base3_base1_base2_top1_top1_top1_top1_top1_top1
+    100018: instances_chain1_chain2_chain3_chain_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6
+    100020: instances_skull1
+    100022: instances_skull2
+    100024: instances_skull3
+    100026: instances_skull_base_group_base_group1_skull
+    100028: tooth4_instances_tooth_tooth1_tooth2
+    100030: tooth5
+    100032: group2_horn2
+    100034: group2_horn3
+    100036: horn2_group2
+    400000: //RootNode
+    400002: horn
+    400004: horn1_group1
+    400006: horn1_group2
+    400008: horn1_group3
+    400010: instances_base_group1_chain_part_chain1_chain2_chain3_chain_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part_chain_part1_chain_part2
+    400012: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_bottom_bottom_bottom_bottom_bottom_bottom_bottom
+    400014: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_mid_mid_mid_mid_mid_mid_mid
+    400016: instances_base_group_base_group1_top1_base_base1_transform3_base2_transform4_base_base3_base1_base2_top1_top1_top1_top1_top1_top1
+    400018: instances_chain1_chain2_chain3_chain_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6
+    400020: instances_skull1
+    400022: instances_skull2
+    400024: instances_skull3
+    400026: instances_skull_base_group_base_group1_skull
+    400028: tooth4_instances_tooth_tooth1_tooth2
+    400030: tooth5
+    400032: group2_horn2
+    400034: group2_horn3
+    400036: horn2_group2
+    2300000: horn
+    2300002: horn1_group1
+    2300004: horn1_group2
+    2300006: horn1_group3
+    2300008: instances_base_group1_chain_part_chain1_chain2_chain3_chain_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part_chain_part1_chain_part2
+    2300010: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_bottom_bottom_bottom_bottom_bottom_bottom_bottom
+    2300012: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_mid_mid_mid_mid_mid_mid_mid
+    2300014: instances_base_group_base_group1_top1_base_base1_transform3_base2_transform4_base_base3_base1_base2_top1_top1_top1_top1_top1_top1
+    2300016: instances_chain1_chain2_chain3_chain_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6
+    2300018: instances_skull1
+    2300020: instances_skull2
+    2300022: instances_skull3
+    2300024: instances_skull_base_group_base_group1_skull
+    2300026: tooth4_instances_tooth_tooth1_tooth2
+    2300028: tooth5
+    2300030: group2_horn2
+    2300032: group2_horn3
+    2300034: horn2_group2
+    3300000: horn
+    3300002: horn1_group1
+    3300004: horn1_group2
+    3300006: horn1_group3
+    3300008: instances_base_group1_chain_part_chain1_chain2_chain3_chain_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part_chain_part1_chain_part2
+    3300010: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_bottom_bottom_bottom_bottom_bottom_bottom_bottom
+    3300012: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_mid_mid_mid_mid_mid_mid_mid
+    3300014: instances_base_group_base_group1_top1_base_base1_transform3_base2_transform4_base_base3_base1_base2_top1_top1_top1_top1_top1_top1
+    3300016: instances_chain1_chain2_chain3_chain_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6
+    3300018: instances_skull1
+    3300020: instances_skull2
+    3300022: instances_skull3
+    3300024: instances_skull_base_group_base_group1_skull
+    3300026: tooth4_instances_tooth_tooth1_tooth2
+    3300028: tooth5
+    3300030: group2_horn2
+    3300032: group2_horn3
+    3300034: horn2_group2
+    4300000: horn
+    4300002: horn1_group1
+    4300004: horn1_group2
+    4300006: horn1_group3
+    4300008: instances_base_group1_chain_part_chain1_chain2_chain3_chain_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part1_chain_part2_chain_part_chain_part_chain_part1_chain_part2
+    4300010: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_bottom_bottom_bottom_bottom_bottom_bottom_bottom
+    4300012: instances_base_group_base_group1_base_base1_transform3_base2_transform4_base_base3_base1_base2_mid_mid_mid_mid_mid_mid_mid
+    4300014: instances_base_group_base_group1_top1_base_base1_transform3_base2_transform4_base_base3_base1_base2_top1_top1_top1_top1_top1_top1
+    4300016: instances_chain1_chain2_chain3_chain_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6_chain_part3_chain_part4_chain_part5_chain_part6
+    4300018: instances_skull1
+    4300020: instances_skull2
+    4300022: instances_skull3
+    4300024: instances_skull_base_group_base_group1_skull
+    4300026: tooth4_instances_tooth_tooth1_tooth2
+    4300028: tooth5
+    4300030: group2_horn2
+    4300032: group2_horn3
+    4300034: horn2_group2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
