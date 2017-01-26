@@ -5,36 +5,49 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Xml;
+using System.Xml.Serialization;
+
 public class SaveToFile : MonoBehaviour {
 	
 	public void WriteToFile()
 	{
-		var bf = new BinaryFormatter();
-        FileStream file;
-        if (File.Exists(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt"))
-        {
-            file = File.Open(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt", FileMode.Append);
-        }
-        else
-        {
-            file = File.Open(Application.persistentDataPath + "/" + PlayerPrefs.GetString("Name") + ".txt", FileMode.Create);
-        }
-		
-
+        Debug.Log(PlayerPrefs.GetInt("HairType") + " " + PlayerPrefs.GetInt("HairType"));
+        //var bf = new BinaryFormatter();
+        
 		var data = new NewPlayer ();
 		data.playerName = PlayerPrefs.GetString ("Name");
-		data.hairType = PlayerPrefs.GetInt("HairType").ToString();
-		data.hairColor = PlayerPrefs.GetInt("HairType").ToString();
+		data.hairType = PlayerPrefs.GetInt("HairType");
+		data.hairColor = PlayerPrefs.GetInt("HairColor");
 
-		bf.Serialize (file, data);
-		file.Close ();
+        data.Save();
 	}
 }
 
-[Serializable]
-class NewPlayer
+[Serializable] [XmlRoot("PlayerCollection")]
+public class NewPlayer
 {
-	public string playerName;
-	public string hairType;
-	public string hairColor;
+   // [XmlArray("Players")[XmlArrayItem("Player")]
+    [XmlAttribute("name")]
+    public string playerName;
+    [XmlAttribute("hairType")]
+	public int hairType;
+    [XmlAttribute("hairColor")]
+	public int hairColor;
+
+    public void Save()
+    {
+        var serializer = new XmlSerializer(typeof(NewPlayer));
+        FileStream fileStream;
+        if (File.Exists(Application.persistentDataPath + "/" + "Characters" + ".xml"))
+        {
+            fileStream = File.Open(Application.persistentDataPath + "/" + "Characters" + ".xml", FileMode.Append);
+        }
+        else
+        {
+            fileStream = File.Open(Application.persistentDataPath + "/" + "Characters" + ".xml", FileMode.Create);
+        }
+        serializer.Serialize(fileStream, this);
+        fileStream.Close();
+    }
 }

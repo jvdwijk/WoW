@@ -19,8 +19,8 @@ public class CharacterSaving : MonoBehaviour {
 	{
 		PlayerPrefs.SetInt ("HairType",key);
 	}
-	public void SetHairColor(int key)
+	public void SetHairColor(int colorKey)
 	{
-		PlayerPrefs.SetInt ("HairColor",key);
+		PlayerPrefs.SetInt ("HairColor",colorKey);
 	}
 }
