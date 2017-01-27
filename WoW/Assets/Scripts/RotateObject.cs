@@ -3,10 +3,13 @@ using System.Collections;
 
 public class RotateObject : MonoBehaviour
 {
-    private float horizontalSpeed = 2.0F;
-    public float turnSpeed = 200f;
+    [SerializeField]
+    private float horizontalSpeed;
+    [SerializeField]
+    private float turnSpeed;
     private bool _rotate;
     private bool lrotate;
+
     void Update()
     {
         if (lrotate)
