@@ -1,20 +1,44 @@
 ﻿using System;
 using UnityEngine;
+using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-public class SaveToFile : NewPlayer {
+public class SaveToFile : MonoBehaviour {
 
-    [SerializeField]
-    private Save save;
+    private NewPlayer data = new NewPlayer();
 
-	public void WriteToFile()
+    public void WriteToFile()
 	{
-		var data = new NewPlayer ();
 		data.playerName = PlayerPrefs.GetString ("Name");
 		data.hairType = PlayerPrefs.GetInt("HairType");
 		data.hairColor = PlayerPrefs.GetInt("HairColor");
-        Debug.Log("test");
-        save.Saving(data);
+        Saving();
 	}
+
+    private void Saving()
+    {
+        var serializer = new XmlSerializer(typeof(NewPlayer));
+        var filePath = Application.persistentDataPath + "/" + "Characters" + ".xml";
+
+        FileMode currentFileMode = (File.Exists(filePath)) ? FileMode.Append : FileMode.Create;
+
+        FileStream fileStream = File.Open(Application.persistentDataPath + "/" + "Characters" + ".xml", currentFileMode);
+
+        serializer.Serialize(fileStream, data);
+        fileStream.Close();
+    }
+}
+
+//[Serialable]
+[XmlRoot("PlayerCollection")]
+public class NewPlayer : MonoBehaviour
+{
+
+    [XmlAttribute("name")]
+    public string playerName;
+    [XmlAttribute("hairType")]
+    public int hairType;
+    [XmlAttribute("hairColor")]
+    public int hairColor;
 }
