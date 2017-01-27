@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: d3bcfb0ec9f3d7f4a9cbe2ae290e57d0
+timeCreated: 1485512578
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body1
+    100002: character:Belly_button
+    100004: character:Character1_Reference
+    100006: character:Head
+    100008: character:hips
+    100010: character:L_clavicle
+    100012: character:L_elbow
+    100014: character:L_enkel
+    100016: character:L_hipbone
+    100018: character:L_knee
+    100020: character:L_pols
+    100022: character:L_shoulder
+    100024: character:L_toe
+    100026: character:Neck
+    100028: character:R_clavicle
+    100030: character:R_elbow
+    100032: character:R_enkel
+    100034: character:R_hipbone
+    100036: character:R_knee
+    100038: character:R_pols
+    100040: character:R_shoulder
+    100042: character:R_toe
+    100044: character:Solar_plexis
+    100046: character:spine_between
+    100048: //RootNode
+    400000: body1
+    400002: character:Belly_button
+    400004: character:Character1_Reference
+    400006: character:Head
+    400008: character:hips
+    400010: character:L_clavicle
+    400012: character:L_elbow
+    400014: character:L_enkel
+    400016: character:L_hipbone
+    400018: character:L_knee
+    400020: character:L_pols
+    400022: character:L_shoulder
+    400024: character:L_toe
+    400026: character:Neck
+    400028: character:R_clavicle
+    400030: character:R_elbow
+    400032: character:R_enkel
+    400034: character:R_hipbone
+    400036: character:R_knee
+    400038: character:R_pols
+    400040: character:R_shoulder
+    400042: character:R_toe
+    400044: character:Solar_plexis
+    400046: character:spine_between
+    400048: //RootNode
+    4300000: body1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: character:Character1_Reference
+        weight: 1
+      - path: character:Character1_Reference/character:hips
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:L_clavicle
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:L_clavicle/character:L_shoulder
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:L_clavicle/character:L_shoulder/character:L_elbow
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:L_clavicle/character:L_shoulder/character:L_elbow/character:L_pols
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:Neck
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:Neck/character:Head
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:R_clavicle
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:R_clavicle/character:R_shoulder
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:R_clavicle/character:R_shoulder/character:R_elbow
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:Belly_button/character:spine_between/character:Solar_plexis/character:R_clavicle/character:R_shoulder/character:R_elbow/character:R_pols
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:L_hipbone
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:L_hipbone/character:L_knee
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:L_hipbone/character:L_knee/character:L_enkel
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:L_hipbone/character:L_knee/character:L_enkel/character:L_toe
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:R_hipbone
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:R_hipbone/character:R_knee
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:R_hipbone/character:R_knee/character:R_enkel
+        weight: 1
+      - path: character:Character1_Reference/character:hips/character:R_hipbone/character:R_knee/character:R_enkel/character:R_toe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
