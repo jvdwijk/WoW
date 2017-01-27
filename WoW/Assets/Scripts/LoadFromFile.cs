@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 public class LoadFromFile : NewPlayer {
 
-    public void Loading(object usedClass)
+    public static NewPlayer Loading()
     {
         var serializer = new XmlSerializer(typeof(NewPlayer));
         using (var stream = new FileStream(Application.persistentDataPath + "/" + "Characters" + ".xml", FileMode.Open))
