@@ -14,7 +14,7 @@ public class SaveToFile : NewPlayer {
 		data.playerName = PlayerPrefs.GetString ("Name");
 		data.hairType = PlayerPrefs.GetInt("HairType");
 		data.hairColor = PlayerPrefs.GetInt("HairColor");
-
+        Debug.Log("test");
         save.Saving(data);
 	}
 }

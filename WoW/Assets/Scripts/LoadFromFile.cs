@@ -10,6 +10,7 @@ public class LoadFromFile : NewPlayer {
         var serializer = new XmlSerializer(typeof(NewPlayer));
         using (var stream = new FileStream(Application.persistentDataPath + "/" + "Characters" + ".xml", FileMode.Open))
         {
+            Debug.Log(stream);
             return serializer.Deserialize(stream) as NewPlayer;
         }
     }
