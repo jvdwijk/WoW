@@ -15,7 +15,7 @@ public class camera_switch : MonoBehaviour
     void FixedUpdate()
     {
         
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.KeypadDivide))
         {
             if (!Camera2.enabled)
             {
@@ -24,7 +24,7 @@ public class camera_switch : MonoBehaviour
             }
          
          }
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.KeypadMultiply))
         {
             Camera1.enabled = true;
             Camera2.enabled = false;
